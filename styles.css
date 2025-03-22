@@ -4,11 +4,23 @@ body {
     padding: 0;
     text-align: center;
     background-color: #2D4059;
+
+    overflow: auto;
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para Internet Explorer y Edge */
 }
+
+body::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari y Edge */
+  }
+
+
+  
 header {
     background-color: #222831;
     color: white;
     padding: 20px;
+     
 }
 
 nav {
@@ -74,7 +86,7 @@ main {
 .movie {
     background: white;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 200px;
 }
