@@ -5,42 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recomendaciones de Películas</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Iansui&family=Playwrite+HU:wght@100..400&family=Righteous&family=Shadows+Into+Light&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
+
+
 </head>
 <body>
-    <div class="container"><header>
-      <head>  
-            <h1>FilmFinder</h1>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Servicios</a>
-                <a href="#">Sobre Nosotros</a>
-                <a href="#">Contacto</a>
-            </nav>
-    </header>
-    <main>
+    
+    <div class="sub_container">
 
-       <div class="searchBar_pelis">
-        <input type="text" id="searchBar" placeholder="Buscar película...">
-        <button id="searchBtn">Buscar</button>
+
+        <h1 class="logo">FilmFinder</h1>
+        <div class="searchBar_pelis">
+            
+            <input type="text" id="searchBar" placeholder="Buscar película...">
+            <button id="searchBtn">Buscar</button>
+        </div>
+
+        <div class="notifyBtn_pelis">
+            <button id="notifyBtn">Notificaciones</button>
+        </div>
+
+        <div class="image_photo">
+            <a href="https://images.pexels.com/photos/31046982/pexels-photo-31046982.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+                <img src="https://images.pexels.com/photos/31046982/pexels-photo-31046982.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="foto de perfil" class="image_profile">
+            </a>
+        </div>
+
     </div>
+
+    <div class="container">
+        <header>
+            <head>  
+               
+                <nav class="navbar">
+                    <a href="#">Home</a>
+                    <a href="#">Trending</a>
+                    <a href="#">Genres</a>
+                    <a href="#">Top Rated</a>
+                </nav>
+        </header>
+        
+        <main>
      
-        <section class="movie">
-            <img src="https://images.pexels.com/photos/31208770/pexels-photo-31208770/free-photo-of-vista-nocturna-del-teatro-babylon-en-berlin.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Película 1">
-            <h2>Película 1</h2>
-            <p>Descripción breve de la película.</p>
-        </section>
-        <section class="movie">
-            <img src="https://images.pexels.com/photos/31168920/pexels-photo-31168920.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Película 2">
-            <h2>Película 2</h2>
-            <p>Descripción breve de la película.</p>
-        </section>
-        <section class="movie">
-            <img src="https://images.pexels.com/photos/31158926/pexels-photo-31158926/free-photo-of-configuracion-de-camara-de-video-profesional-con-pantalla.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Película 3">
-            <h2>Película 3</h2>
-            <p>Descripción breve de la película.</p>
-        </section>
-    </main>
-</div>
+            <section class="movie">
+                <img src="https://images.pexels.com/photos/31208770/pexels-photo-31208770/free-photo-of-vista-nocturna-del-teatro-babylon-en-berlin.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Película 1">
+                <h2>Película 1</h2>
+                <p>Descripción breve de la película.</p>
+            </section>
+            <section class="movie">
+                <img src="https://images.pexels.com/photos/31168920/pexels-photo-31168920.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Película 2">
+                <h2>Película 2</h2>
+                <p>Descripción breve de la película.</p>
+            </section>
+            <section class="movie">
+                <img src="https://images.pexels.com/photos/31158926/pexels-photo-31158926/free-photo-of-configuracion-de-camara-de-video-profesional-con-pantalla.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Película 3">
+                <h2>Película 3</h2>
+                <p>Descripción breve de la película.</p>
+            </section>
+        </main>
+    </div>
     
 </body>
 </html>

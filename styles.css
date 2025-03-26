@@ -15,6 +15,33 @@ body::-webkit-scrollbar {
   }
 
 
+  .logo{
+    color: #f5f5f5;
+   /* background-color: rgb(25, 0, 255); */
+    margin-left: 20px;
+    padding: 5px;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-style: normal;
+
+  }
+
+.sub_container{
+    padding: 20px 0;
+    background-color: #222831;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+    background-color: #00ff66;
+}
+
   
 header {
     background-color: #222831;
@@ -23,10 +50,17 @@ header {
      
 }
 
+.navbar{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
 nav {
     display: flex;
     justify-content: center;
     gap: 25px;
+    
 }
 nav a {
     color: white;
@@ -41,33 +75,82 @@ nav a:hover {
 }
 
 .searchBar_pelis{
-    background-color: #ff4500;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+   /* background-color: #ff4500; */
+    border-radius: 10px;  
+    padding: 10px 0;
+    width: 60%;
+    justify-content: space-around;
+}
+
+
+.notifyBtn_pelis{
+    
+    padding: 10px;
+    align-content: center;
+}
+
+.image_profile{
+    width: 35px;  
+    height: 35px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 0.5px solid rgb(0, 0, 0); 
+    display: block;
+    
+    transition: 0.5s;
 }
 
 #searchBar {
-    padding: 5px;
-    width: 50%;
-   
-    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
     border-radius: 5px;
     border: none;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 #searchBtn {
-    padding: 5px 5px;
+   display: flex;
+   align-items: center;
+    padding: 10px;
     border: none;
-    background-color: #ff4500;
+    /* background-color: #ff4500; */
     height: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
     cursor: pointer;
-    margin-left: 10px;
-    transition: 0.3s;
+    
+    transition: 0.5s;
+}
+
+#notifyBtn{
+         /* background-color: #ff4500; */
+        padding: 5px;
+        border: none;
+        height: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+      
+        transition: 0.5s;
+
+}
+
+.image_profile:hover{
+    transform: scale(1.1);
+}
+
+#notifyBtn:hover{
+    transform: scale(1.1);
+
 }
 
 #searchBtn:hover{
-background-color: #f5f5f5;
-color: #222831;
+
+transform: scale(1.1);
+
 }
 
 .link{
